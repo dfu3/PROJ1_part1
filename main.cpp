@@ -50,11 +50,13 @@ int main ( int argc, char* argv[] )
                     {
                         if(isspace(line[i]))
                             words++;
-                        else
-                            chars++;
+
+                        chars++;
                     }
 
                 }
+
+                chars+= lines;
                 cout << lines << ' ' << words << ' ' << chars << ' ' << currArg << endl;
 
             }
